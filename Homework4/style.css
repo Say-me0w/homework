@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+a {
+    text-decoration: none;
+    color: #000000;
+}
+ li {
+    list-style: none;
+ }
+
+ img {
+    max-width: 100%;
+ }
+
+
+body {
+    display: ;
+    height: 100%;
+    background: linear-gradient(125deg, #FC3F5F 0%, #7D61FF 100.32%);
+    justify-content: center;
+    font-family: Poppins;
+    line-height: normal;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1410px;
+    height: 1010px;
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(43, 34, 21, 0.80) -1.22%, #22282E 101.33%);
+    box-shadow: 0px 0px 250px 0px rgba(0, 0, 0, 0.30);
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    align-items: center;
+    padding: 32px;
+}
+
+
+
+.nav-ul {
+    display: flex;
+    width: 427.333px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    
+}
+
+.nav-btn {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 16px;  
+    border-radius: 999px;
+    background: linear-gradient(93deg, #E1E1E1 8.37%, #FFF 99.95%);
+    box-shadow: 0px 4px 50px 0px rgba(37, 37, 37, 0.08), 1px 1px 1px 0px rgba(135, 135, 135, 0.32) inset;
+    color: #24282E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    text-align: center;
+}
+
+.main {
+   margin-top: 179px;
+}
+
+.logo, .nav-a-btn{
+    max-width: 175px;
+    width: 100%;
+}
+
+.title {
+    color: var(--gray-special-300, #F2F4F7);
+    text-align: center;
+    font-size: 72px;
+    font-weight: 400;
+    max-width: 598px;
+    margin-inline: auto;
+    margin-bottom: 32px;
+}
+
+
+.text {
+    color: #F2F4F7;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 80px;
+    max-width: 598px;
+    margin-inline: auto;
+}
+
+.main-btn {
+    display: flex;
+    width: 239px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;    
+    border-radius: 999px;
+    border: 2px solid #FC40F4;    
+    font-size: 18px;
+    font-weight: 600;
+    color: #FC40F4;
+    margin-bottom: 64px;
+    margin-inline: auto;
+}
+
+.load {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 32px;
+    justify-content: center;
+}
+
+.nav-a {
+    color: #A0A3A7;
+}
