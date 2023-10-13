@@ -126,3 +126,6 @@ a {
     outline: 0;
 }
 
+#menuCheckbox:checked~.nav__ul__mobal {
+    background-color: red;
+}

@@ -17,13 +17,13 @@ a {
 
 
 body {
-    display: ;
     height: 100%;
     background: linear-gradient(125deg, #FC3F5F 0%, #7D61FF 100.32%);
     justify-content: center;
     font-family: Poppins;
     line-height: normal;
     font-style: normal;
+    padding: 5px;
 }
 
 .container {
@@ -54,6 +54,15 @@ body {
     
 }
 
+.nav-a {
+    color: #A0A3A7;
+    transition: .2s all ease-in-out;
+}
+
+.nav-a:hover {
+    color:#d0ff00;
+}
+
 .nav-btn {
     display: inline-block;
     border: 0;
@@ -66,13 +75,20 @@ body {
     border-radius: 999px;
     background: linear-gradient(93deg, #E1E1E1 8.37%, #FFF 99.95%);
     box-shadow: 0px 4px 50px 0px rgba(37, 37, 37, 0.08), 1px 1px 1px 0px rgba(135, 135, 135, 0.32) inset;
-    color: #24282E;
     font-size: 14px;
     font-style: normal;
     font-weight: 550;
     line-height: normal;
     text-align: center;
+    transition: .2s all ease-in-out;
 }
+
+.nav-btn:hover {
+    background: #000000;
+    color: #ffffff;
+
+}
+
 
 .main {
    margin-top: 179px;
@@ -104,9 +120,9 @@ body {
     margin-inline: auto;
 }
 
-.main-btn {
+.main_btn {
     display: flex;
-    width: 239px;
+    max-width: 239px;
     padding: 16px 32px;
     justify-content: center;
     align-items: center;
@@ -118,6 +134,13 @@ body {
     color: #FC40F4;
     margin-bottom: 64px;
     margin-inline: auto;
+    transition: .2s all ease-in-out;
+}
+.main_btn:hover {
+    border: 2px solid #d0ff00;    
+    color: #d0ff00;
+    transform: scale(2);
+    transform: translateY(-10px);
 }
 
 .load {
@@ -128,6 +151,166 @@ body {
     justify-content: center;
 }
 
-.nav-a {
-    color: #A0A3A7;
+.icon-menu {
+    color: #ffffff;
+    font-size: 45px;
+    display: none;
+    cursor: pointer;
+}
+
+.download-icon {
+    display: none;
+}
+
+#menuCheckbox {
+    display: none;
+}
+.burger__menu {
+    display: none;
+}
+
+.download-icon-burger {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    .nav-btn {
+        display: none;
+    }
+   
+    .download-icon {
+        display: inline-block;
+        cursor: pointer;
+        display: flex;
+        padding: 8px 15px;
+        align-items: center; 
+        border-radius: 999px;
+        background: linear-gradient(93deg, #E1E1E1 8.37%, #FFF 99.95%);
+        color: #24282E;
+        font-size: 20px;
+        font-style: normal;
+        text-align: center;
+        transition: .2s all ease-in-out;
+    }
+
+    .download-icon:hover {
+        background: #000000;
+        color: #ffffff;
+    
+    }
+
+    .main {
+        padding: 30px;
+        margin-top: 110px;
+    }
+    .logo, .nav-a-btn{
+        max-width: 45px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+
+    .nav-btn {
+        display: none;
+    }
+    .burger__menu {
+        display: inline-block;
+    }
+
+    .nav-ul {
+        display: none;
+        transform: translateY(-130%);
+        transition: .3s all ease-in-out;
+        position: absolute;
+        right: 30px;
+        top: 36px;
+        flex-direction: column;
+        background: #333;
+        width: 150px;
+        padding: 170px 100px 170px 100px;
+        line-height: 25px;
+        gap: 20px;
+        color: #F2F4F7;
+        opacity: 0.93;
+        display: flex;
+    }
+
+    .icon-menu {
+        display: inline-block;
+        position: relative;
+    }
+   
+
+
+    #menuCheckbox:checked~.nav-ul {
+        transform: translateY(0);
+        
+    }
+    
+
+    .nav-a {
+        color: #F2F4F7;
+    }
+
+    .download-icon-burger {
+        transition: .2s all ease-in-out;
+        display: inline-block;
+        cursor: pointer;
+        display: flex;
+        padding: .5px 7px;
+        align-items: center; 
+        border-radius: 999px;
+        border: 2px solid #d0ff00; 
+        color: #d0ff00;
+        font-size: 14px;
+        font-style: normal;
+        text-align: center;
+        
+    }
+
+    .download-icon-burger:hover {
+        border: 2px solid #FC40F4; 
+        color: #FC40F4;
+    }
+
+    .nav-li {
+        line-height: 25px;
+    }
+
+
+    .download-icon {
+        display: none;
+    }
+
+    .container {
+        border-radius: 0;
+    }
+    
+    body {
+        padding: 0;
+    }
+
+    .main {
+        margin-top: 70px;
+        padding: 45px;
+     }
+
+    .title {
+        color: var(--gray-special-300, #F2F4F7);
+        text-align: center;
+        font-size: 45px;
+        font-weight: 400;
+        max-width: 598px;
+        margin-inline: auto;
+        margin-bottom: 32px;
+    }   
+
+    .main_btn {
+        max-width: 200px;
+        padding: 12px 28px;
+    }
+ 
 }
